@@ -1,9 +1,9 @@
-# 🧠 Prediction of Chess Moves using Supervised Machine Learning Models
+# 🧠 Prediction of Chess Moves using Supervised Machine Learning Models (UNFINISHED)
 
 ## 📌 Overview
 This project explores the use of supervised machine learning models to predict the next move in a chess game based on the current board state and move history. The goal is to assess how accurately various models can anticipate player decisions in structured, strategic gameplay like chess.
 
-> 🧾 **Note:** This project was developed as part of a postgraduate data science programme (MSc exit award: Postgraduate Diploma). The core functionality is complete, with fine-tuning and documentation ongoing.
+> 🧾 **Note:** This project was developed as part of a MSc data science programme (MSc exit award: Postgraduate Diploma). The basic core functionality is complete, with fine-tuning and documentation ongoing. This project was intended to be my capstone project. Should I return to complete my MSc, this project will likely be the basis. This is the work that I had completed towards to before I took the exit award.
 
 ## 🎯 Objectives
 - Preprocess and encode chess game data into a format suitable for ML models  
@@ -16,21 +16,19 @@ This project explores the use of supervised machine learning models to predict t
 - scikit-learn
 - Pandas, NumPy
 - Matplotlib / Seaborn
-- (Optional: XGBoost / TensorFlow if used)
 
 ## 🗂️ Dataset
-- Source: [Specify: Lichess / FICS / Kaggle etc.]  
+- Source: Lichess (direct link currently unavailable)
 - Contains PGN (Portable Game Notation) data of thousands of real chess games  
 - Processed into feature-label pairs where:
   - Features: Board state, player color, move number, etc.
   - Label: Next move (encoded as target class)
 
 ## 🧪 Models Used
-- Logistic Regression  
+- SVM 
 - Decision Tree Classifier  
-- Random Forest  
-- K-Nearest Neighbors  
-- (Optional: Gradient Boosted Trees, SVM, Neural Networks, etc.)
+- Random Forest
+- (More expected to be included later).
 
 ## 📈 Evaluation
 Models were evaluated using:
@@ -45,27 +43,6 @@ Models were evaluated using:
 - Move prediction is highly dependent on game stage and board complexity  
 - Feature engineering (e.g., encoding board state) had a major impact on performance
 
-## 📂 Project Structure
-```
-chess-move-prediction/
-├── data/                   # Processed dataset files
-├── notebooks/              # Jupyter notebooks for exploration/training
-├── models/                 # Trained model files (if saved)
-├── report.docx             # Full academic report (if included)
-├── requirements.txt        # Dependencies
-└── README.md               # This file
-```
-
-## 🚀 How to Run
-1. Clone this repository  
-2. Install dependencies:  
-   ```
-   pip install -r requirements.txt
-   ```
-3. Run the main notebook or script:  
-   ```
-   jupyter notebook notebooks/model_training.ipynb
-   ```
 
 ## 🔍 Future Work
 - Test deep learning approaches (e.g., LSTM or transformer-based models)  
